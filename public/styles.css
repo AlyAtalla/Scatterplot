@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+}
+
+#chart {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dot {
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#tooltip.visible {
+  opacity: 1;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.dot.doping {
+  background-color: red;
+}
+
+.dot.no-doping {
+  background-color: blue;
+}

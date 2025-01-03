@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyclist Performance Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Doping in Professional Bicycle Racing</h1>
+        <div id="chart-container">
+            <svg id="chart"></svg>
+        </div>
+        <div id="tooltip" class="hidden"></div>
+        <div id="legend" class="legend">
+            <div class="legend-item">
+                <div class="dot doping"></div>
+                Riders with doping allegations
+            </div>
+            <div class="legend-item">
+                <div class="dot no-doping"></div>
+                No doping allegations
+            </div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
